@@ -3,6 +3,9 @@ package Banking;
 /**
  * Created by shsoni on 9/13/2016.
  */
+//Program to demonstrate subclassing
+//abstract class Account
+
 public abstract class Account {
 
 private long balance;

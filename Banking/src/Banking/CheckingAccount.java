@@ -3,6 +3,7 @@ package Banking;
 /**
  * Created by shsoni on 9/13/2016.
  */
+//Class CheckingAccount - subclassed from Class Account
 public class CheckingAccount extends Account {
     long overDraftAmount;
 
@@ -14,6 +15,7 @@ public class CheckingAccount extends Account {
         setHolderName(holderName);
         this.overDraftAmount = overDraftAmount;
     }
+
 
     @Override
     public boolean deposit(long amount) {

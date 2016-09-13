@@ -3,6 +3,8 @@ package Banking;
 /**
  * Created by shsoni on 9/13/2016.
  */
+
+//Class MortgageAccount - subclassed from Class Account
 public class MortgageAccount extends Account {
 
     public MortgageAccount()
