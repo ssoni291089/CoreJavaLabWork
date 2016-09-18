@@ -3,6 +3,7 @@ package builder;
 /**
  * Created by shsoni on 9/17/2016.
  */
+// Target class
 public class Target {
 
     private final String fieldA;
@@ -41,7 +42,7 @@ public class Target {
 
 
 
-
+// nested Builder class
     public static class Builder
     {
         private final String fieldA;
@@ -85,6 +86,7 @@ public class Target {
             return target;
         }
 
+        // the function that validates the rules
         private void isValid(Target target) throws CustomException {
 
              if (target.fieldA == null) {
