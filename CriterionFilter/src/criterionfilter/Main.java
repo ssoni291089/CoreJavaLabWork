@@ -5,6 +5,7 @@ public class Main {
 
     public static void main(String[] args) {
 
+        //calling the test methods
         TestClass tc = new TestClass();
 
         tc.testMethod1();
@@ -12,7 +13,13 @@ public class Main {
         tc.testMethod2();
 
         tc.testMethod3();
+
+        tc.testMethod4();
+
+        tc.testMethod5();
     }
+
+
     public static List<String> getLongStrings(List<String> ls, int thresLength)
     {
         List<String> outputString = new ArrayList<>();
@@ -28,18 +35,19 @@ public class Main {
         return outputString;
     }
 
-    public static List<String> StringFilter(List<String> ls, StringCriterion sc)
+    //generalizing things
+    public static List<Object> StringFilter(List<Object> ls, StringCriterion sc)
     {
-        List<String> outputString = new ArrayList<>();
-        for(String s : ls)
+        List<Object> outputLs = new ArrayList<>();
+        for(Object s : ls)
         {
-            if(sc.stringCheck(s))
+            if(sc.check(s))
             {
-                outputString.add(s);
+                outputLs.add(s);
             }
 
         }
 
-        return outputString;
+        return outputLs;
     }
 }

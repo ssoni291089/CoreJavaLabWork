@@ -4,8 +4,8 @@ package criterionfilter;
  * Created by shsoni on 9/19/2016.
  */
 //Interface to generalize String Criterion check
-public interface StringCriterion {
+public interface StringCriterion<U> {
 
-public Boolean stringCheck(String s);
+public <U> boolean check(Object input);
 
 }
